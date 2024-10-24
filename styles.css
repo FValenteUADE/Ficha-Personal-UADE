@@ -92,3 +92,34 @@ footer p {
     margin: 0; /* Elimina los márgenes por defecto */
     font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
 }
+/* Para pantallas de hasta 768px (tablets y teléfonos móviles) */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column; /* Apilar imagen y texto en lugar de mostrarlos uno al lado del otro */
+        text-align: center;
+    }
+
+    .profile img {
+        width: 150px; /* Redimensionar la imagen para pantallas más pequeñas */
+        margin-bottom: 20px;
+    }
+
+    .info {
+        margin-left: 0; /* Eliminar margen cuando la información se apile */
+    }
+}
+
+/* Para pantallas de hasta 480px (teléfonos móviles pequeños) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em; /* Reducir tamaño del título */
+    }
+
+    .profile {
+        width: 90%; /* Hacer el contenedor más pequeño */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Ajustar tamaño del texto del pie de página */
+    }
+}
